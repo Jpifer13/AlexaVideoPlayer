@@ -1,0 +1,84 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "at mars",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "SpeakerIntent",
+          "slots": [
+            {
+              "name": "talk",
+              "type": "videoGenre"
+            }
+          ],
+          "samples": [
+            "play the video {talk}",
+            "watch {talk}",
+            "i want to watch a video about {talk}",
+            "i want to watch a talk about {talk}",
+            "i want to watch {talk}",
+            "select {talk}",
+            "play {talk}",
+            "i pick {talk}",
+            "i choose {talk}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "echo"
+              }
+            },
+            {
+              "name": {
+                "value": "alexa skills"
+              }
+            },
+            {
+              "name": {
+                "value": "gaming",
+                "synonyms": [
+                  "game video",
+                  "gaming video",
+                  "game videos",
+                  "gaming videos",
+                  "games",
+                  "video gaming",
+                  "video games"
+                ]
+              }
+            }
+          ],
+          "name": "videoGenre"
+        }
+      ]
+    }
+  }
+}
